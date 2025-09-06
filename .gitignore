@@ -1,0 +1,40 @@
+# =============================================================================
+#  CRITICAL: SECRETS & ENVIRONMENT VARIABLES
+# =============================================================================
+# NEVER commit your API keys. This is a major security risk.
+.env
+
+
+# =============================================================================
+#  PYTHON VIRTUAL ENVIRONMENT
+# =============================================================================
+# The venv contains installed packages and is machine-specific.
+# Other users will create their own using requirements.txt.
+venv/
+.venv/
+env/
+
+
+# =============================================================================
+#  GENERATED DATA & CACHE
+# =============================================================================
+# This folder contains the FAISS indexes (.faiss, .pkl) which are created
+# by your application and can get large. They don't belong in source control.
+faiss_indexes/
+
+# Python's compiled bytecode cache.
+__pycache__/
+*.pyc
+
+
+# =============================================================================
+#  IDE & OPERATING SYSTEM FILES
+# =============================================================================
+# VS Code editor-specific settings and cache.
+.vscode/
+
+# Windows image thumbnail cache.
+Thumbs.db
+
+# macOS folder metadata file (good practice for cross-platform collaboration).
+.DS_Store
